@@ -7,12 +7,16 @@ Basically Pop the query uses google datastore backend to store the data like Que
 
 Where each class represents the table in datastore.
 
-** How Datastore store data? **
+Why python?
+===========
 
-     In datastore everything is object means each row you insert in to the database is actually a object.
+App engine using python is blazing fast and with few lines of code you can set a backend for your project.
 
-** Why python? ** 
 
-     App engine using python is blazing fast and with few lines of code you can set a backend for your project.
+How Datastore store data?
+===========
+
+In datastore everything is object means each row you insert in to the database is actually a object.
+
 
 Demo : http://devappdemo.appspot.com/
