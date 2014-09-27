@@ -1,0 +1,12 @@
+application: devappdemo
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /files
+  static_dir: files
+
+- url: /.*
+  script: helloworld.py

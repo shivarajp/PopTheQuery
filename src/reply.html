@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Pop The Query</title>
+
+    <script src="files/js-image-slider.js" type="text/javascript"></script>
+  
+    <script src="files/tooltip.js" type="text/javascript"></script>
+   
+	<style type="text/css">
+	
+/*
+Design by Free Web Page Templates
+http://www.webpagetemplates.org/
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #72809F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+}
+
+p, blockquote, ul, ol, dl {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 190%;
+}
+
+a {
+	color: #B70000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.link1 {
+	text-decoration: none;
+	color: #B70000;
+}
+
+.link2 {
+	text-decoration: none;
+	color: #666666;
+}
+
+.text1 {
+	padding-left: 10px;
+	font-size: 10px;
+	color: #666666;
+}
+
+.text2 {
+	padding: 20px 0px 0px 28px;
+	text-transform:uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.text3 {
+	text-transform:uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.text4 {
+	text-transform:uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #B70000;
+}
+
+.text5 {
+	text-transform:uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #B70000;
+}
+
+.style1 {
+	padding: 10px 0px 0px 0px;
+	background: url(files/img2.gif) no-repeat left top;
+	width: 95px;
+	height: 56px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.style1 a {
+	margin: 0px;
+	padding: 50px 0px 0px 0px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #666666;
+}
+
+.style1 a:hover {
+}
+
+.bg1 {
+	background: url(files/img1.gif) no-repeat left top;
+	width: 265px;
+	height: 65px;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+.align-right {
+	text-align: right;
+}
+
+img {
+	border: none;
+}
+
+.img1 {
+	float: left;
+	margin: 3px 15px 0px 0px;
+}
+
+.img2 {
+	float: right;
+	margin: 3px 0px 0px 15px;
+}
+
+hr {
+	display: none;
+}
+
+.hr1 {
+	height: 1px;
+}
+
+/* Header */
+
+#header {
+	width: 1000px;
+	height: 135px;
+	margin: 0px auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 600px;
+}
+
+#logo h1 {
+	margin: 0px;
+	padding: 50px 0px 0px 0px;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 290px;
+	margin: 0px;
+	padding: 0px;
+	background: url(files/img01.jpg) no-repeat left top;
+	border-radius: 5px;
+}
+
+#search form {
+	height: 35px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#search fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#search-text {
+	width: 222px;
+	margin: 0px;
+	padding: 0px 10px;
+	background: none;
+	outline: 0;
+	border: 0;
+	text-transform: lowercase;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #E3E3E3;
+}
+
+#search-submit {
+	width: 40px;
+	margin: 0px;
+	padding: 8px 0px 0px 0px;
+	background: none;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	overflow: hidden;
+	width: 1000px;
+	height: 20px;
+	margin: 0px auto;
+	padding: 0px;
+	background: #2F2E29;
+	border-top-left-radius:  5px;
+	border-top-right-radius:  5px;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+	margin-top:-15px;
+	background: url(files/img02.jpg) no-repeat left top;
+}
+
+#menu a {
+	display: block;
+	float: inherit;
+	width: 199px;
+	height: 25PX;
+	
+	margin: 0px auto;
+	padding: 20px 0px 0px 0px;
+	text-decoration: none;
+	text-align:center;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: #FFFFFF;
+	
+}
+
+#menu .first {
+	background: none;
+}
+
+#menu .active {
+	background: #950004;
+}
+
+/* Wrapper */
+
+#wrapper {
+	background: #FFFFFF;
+	padding: 30px 0px;
+}
+
+/* Page */
+
+#page {
+	width: 1000px;
+	margin: 0px auto;
+	padding: 40px 0px 30px 0px;
+}
+
+/* Wide Content */
+
+#wide-content {
+	width: 1000px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#wide-content h2 {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-size: 38px;
+	color: #292927;
+}
+
+/* Footer */
+
+#footer {
+	width: 1000px;
+	height: 130px;
+	margin: 0px auto;
+	padding: 40px 0px 0px 0px;
+}
+
+#footer p {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	color: #373737;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #373737;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+	color: #595959;
+}
+
+#footer .active {
+	color: #595959;
+}
+
+/* Three Columns */
+
+#column1 {
+	float: left;
+	width: 320px;
+	margin-right: 20px;
+}
+
+#column1 h2, #column2 h2, #column3 h2 {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-size: 26px;
+	color: #292927;
+}
+
+#column2 {
+	float: left;
+	width: 320px;
+}
+
+#column3 {
+	float: right;
+	width: 320px;
+}
+
+.image-style1 {
+	margin-bottom: 10px;
+	border: 5px solid #EDEDED;
+}
+
+/* For generic page styles. Not for sliders. */
+
+body {background:white;font:normal 0.9em Arial; margin:0; padding:0; padding-bottom:60px;}
+h2 {display:inline;}
+.div1, .div2 {width:700px;margin:0 auto;}
+.div1 {margin-top:30px;margin-bottom:60px;text-align:center;line-height:20px;}
+.div1 P {font-size:18px;}
+.div1 a, .div2 a {color:#07C; }
+.div1 a {margin:0 8px;}
+.div1 a.current {color:black; text-decoration:none;}
+.div2 {margin-top:70px;}
+.div2 li {padding-top:6px;padding-bottom:6px;}
+.green {color:Green;}
+.cn {font-family: "Courier New", Georgia;}
+#status {display:inline-block; margin-left:26px;line-height:50px;height:50px;vertical-align:middle;}
+
+.code
+{
+    border: dashed 1px #BCBCCB; padding:8px 12px; background-color: #F3F3F9; white-space:pre; font-family:"Courier New", Georgia;
+    font-size:12px; margin:6px 0;overflow:auto; 
+}
+/*Tooltip component by www.menucool.com */
+
+/*For tooltip target element that has set class="tooltip" */
+.tooltip {text-decoration: none; border-bottom:1px dotted #36c;color: #36c; outline: none; }
+
+/*For tooltip box*/
+div#mcTooltip 
+{
+    line-height:16px;
+    border-width: 1px;   
+    color:#333; 
+    border-color:#BBBBBB;
+    padding:6px 9px;
+    font-size: 12px;
+    font-family: Verdana, Arial;
+    border-radius:4px; /*Rounded corners. N/A for IE 8 and below.*/
+    box-shadow: 0 1px 6px #AAAAAA; /*Drop shadow. N/A for IE 8 and below.*/
+}
+
+div#mcTooltip, div.mcTooltipInner 
+{
+    background-color:#EAECF0;
+}
+
+/* For hyperlink within tooltip */
+div#mcTooltip a { color:#36c; }
+
+/*Close button. Available when sticky or overlay has been set to true, or is on iPhone, iPad, Android, BlackBerry, or IEMobile devices. */
+div#mcttCloseButton 
+{
+    width:14px;height:14px;position:absolute;background-image:url(closeBtn.gif);cursor:pointer; overflow:hidden;
+    top:12px; right:12px; left:auto;
+}            
+
+/* Only applies when overlay has been set to true or 1 */
+div#mcOverlay 
+{
+    background-color: white;
+    opacity:0.8; filter: alpha(opacity=80); 
+    display:none;top:0;left:0;width:100%;height: 100%;overflow:visible;z-index:4; 
+}
+
+/*Only available when calling by tooltip.ajax(...). It will be a spinning image indicating a request is in progress.*/
+div#tooltipAjaxSpin {margin:20px 50px; background:transparent url(loading.gif) no-repeat center center; width:50px; height:30px; font-size:0;}
+
+/*The settings below should remain unchanged*/
+div#mcTooltipWrapper {position:absolute;visibility:hidden;overflow:visible;z-index:9999999999;top:0px;}
+div#mcTooltip {float:left;border-style:solid;position:relative;overflow:hidden;}
+div.mcTooltipInner {float:left;position:relative;width:auto;height:auto;}
+div#mcttCo {position:absolute;text-align:left;}
+div#mcttCo em, div#mcttCo b {display:block; width:0; height:0;overflow:hidden;}
+
+/* http://www.menucool.com */
+
+#sliderFrame 
+{
+    position:relative;
+    width:1000px;
+    margin: 0px auto;/*center-aligned*/
+}
+
+#slider, #slider div.sliderInner {
+    width:1000px;height:306px;/* Must be the same size as the slider files */
+    border-bottom-left-radius:  12px;
+    border-bottom-right-radius:  12px;
+   
+}
+
+#slider {
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+	position:relative;
+    transform: translate3d(0,0,0);
+    box-shadow: 0px 1px 5px #999999;
+}
+
+/* the link style (if an image is wrapped in a link) */
+#slider a.imgLink, #slider .video {
+	z-index:2;
+	position:absolute;
+	top:0px;left:0px;border:0;padding:0;margin:0;
+	width:100%;height:100%;
+}
+#slider .video {
+	background:transparent url(video.png) no-repeat 50% 50%;
+}
+
+/* Caption styles */
+#slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
+	position:absolute;
+	width:440px;
+	height:auto;
+	padding:10px 0;/* 10px will increase the height.*/
+	left:120px; /*if the caption needs to be aligned from right, specify by right instead of left. i.e. right:20px;*/
+	bottom:10px;/*if the caption needs to be aligned from top, specify by top instead of bottom. i.e. top:150px;*/
+	z-index:3;
+	overflow:hidden;
+	font-size: 0;
+}
+#slider div.mc-caption-bg {
+    /* NOTE: Its opacity is to be set through the sliderOptions.captionOpacity setting in the js-image-slider.js file.*/
+	background:Black;/* or any other colors such as White, or: background:none; */
+	border:1px solid white;
+	border-radius: 5px;
+}
+#slider div.mc-caption-bg2 {
+    background:none;
+}
+#slider div.mc-caption {
+	font:bold 15px Arial;
+	color:#EEE;
+	z-index:4;
+	text-align:center;
+    background:none;
+}
+#slider div.mc-caption a {
+	color:#FB0;
+}
+#slider div.mc-caption a:hover {
+	color:#DA0;
+}
+
+
+/* ------ built-in navigation bullets wrapper ------*/
+/* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
+#slider div.navBulletsWrapper  {
+	top:320px;/* Its position is relative to the #slider */
+	text-align:center;
+	background:none;
+	position:relative;
+	z-index:5;
+}
+
+/* each bullet */
+#slider div.navBulletsWrapper div 
+{
+    width:11px; height:11px;
+    border:1px solid #AAA;
+    background:#EEE;
+    color:#AAA;
+    font:normal 9px Arial;
+    text-align:center;
+    display:inline-block; *display:inline; zoom:1;
+    overflow:hidden;cursor:pointer;
+    margin:0 6px;/* set distance between each bullet*/
+    border-radius:50%;
+    box-shadow:inset 0 0 4px #AAA;
+}
+
+#slider div.navBulletsWrapper div.active {
+    border-color:#3E99C6;
+    background:#259FDC;
+    color:White;
+}
+
+
+/* --------- Others ------- */
+
+#slider div.loading 
+{
+    width:100%; height:100%;
+    background:transparent url(loading.gif) no-repeat 50% 50%;
+    filter: alpha(opacity=60);
+    opacity:0.6;
+    position:absolute;
+    left:0;
+    top:0; 
+    z-index:9;
+}
+
+#slider img, #slider>b, #slider a>b {
+	position:absolute; border:none; display:none;
+}
+
+#slider div.sliderInner {
+	overflow:hidden; 
+	-webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+	position:absolute; top:0; left:0;
+}
+
+#slider>a, #slider video, #slider audio {display:none;}
+#userinput{
+	width:550px;
+	margin: 0px auto;
+	
+	
+}
+#qtn
+{
+	font-family: Times New Roman
+	background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px;
+    
+    box-shadow: 0 0 2px #333; 
+  color: #1455a2;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    width:660px;
+    
+}
+.dropdown p {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.dropdown select {
+	
+
+outline: none;
+-webkit-border-radius:5px;
+    -webkit-font-smoothing: antialiased;
+     border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #333; 
+      background: url('files/dropdown_arrow.png') no-repeat;  /*Adds background-image*/
+      background-position: 145px 6px;  /*Position of the background-image*/
+      width: 165px; /*Width of select dropdown to give space for arrow image*/
+      text-indent: 4px; /* Removes default arrow from firefox*/
+      text-overflow: "";  /*Removes default arrow from firefox*/
+      font-size: 16px;
+      /*My custom style for fonts*/
+ -webkit-appearance: none;
+    -moz-appearance: none;
+      color: #1455a2;
+}
+.mybutton {
+	background-color:#0d1014;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:16px;
+	padding:7px 43px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.mybutton:hover {
+	background-color:#a12009;
+}
+.mybutton:active {
+	position:relative;
+	top:1px;
+}
+
+#qtn:hover{
+	 border: 0.3px solid #ffa853;
+	 box-shadow: 0 0 2px 1px #ffa853;
+    
+}
+ 
+  .textbox {
+	font-family: Times New Roman;
+     background: white; 
+    border: 0.3px solid #ffa853; 
+    border-radius: 2.5px; 
+    box-shadow: 0 0 2px 2px #ffa853; 
+    color: #1455a2;
+    outline: none; 
+    height:23px; 
+    width: 600px;
+    font-size: 14px;
+  } 
+
+	</style>
+    
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript">
+	      
+      function checkvalue() { 
+    
+    var mystring1 = document.getElementById('qtn').value;
+    var mess="";
+    var flag=1;
+    
+     if((!mystring1.match(/\S/))||length(mystring1)<15) {
+	
+        mess+="Query should atleast consist of 15 characters \n";
+        flag=0;
+    }
+    if (flag==0) {
+	alert(mess);
+	return false;
+    }
+    else
+    {
+	return true;
+    }
+}
+	</script>
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="header">
+	<tr>
+		<td id="logo"><img src="files/head.png" /></td>
+		<td><div id="search">
+				<form method="get" action="">
+					<fieldset>
+						<input type="text" name="s" id="search-text" size="18px" />
+						<input type="submit" id="search-submit" value="GO" />
+					</fieldset>
+				</form>
+			</div></td>
+	</tr>
+</table>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" id="menu">
+	<tr style="height:20px">
+		<td><ul>
+				<li ><a href="http://devappdemo.appspot.com/">Homepage</a></li>
+				<li class="first active"><a href="http://devappdemo.appspot.com/popthequery">Pop The Query</a></li>
+				<li><a href="http://devappdemo.appspot.com/register">Raise A Query</a></li>
+				<li><a href="http://devappdemo.appspot.com/aboutus">About Us</a></li>
+				<li><a href="http://devappdemo.appspot.com/contactus">Contact Us</a></li>
+			</ul></td>
+	</tr>
+</table>
+<br/>
+<br/>
+<form action="" method="post">
+<table  cellpadding="0" cellspacing="0" border="0" id="userinput"  style="border-collapse: separate; border-spacing: 10px 25px;" >
+   <tr >
+		<td >
+			<span style="font-size: 18px;font-family: Times New Roman;color: black">{% for shout in sh1 %}
+              <input type="text" value="{{shout.section}}" class="textbox" readonly="true" name="ques" id="ques" />    
+            {% endfor %}  
+			
+                                                                                          
+                                                                                       
+              </span>
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+   <tr >
+		<td colspan="2">
+			
+		
+			<div style="font-size: 18px;font-family: Times New Roman;color: black" >  
+			 Ques. Description:&nbsp;&nbsp;
+			{% for shout in sh1 %}
+                  {{shout.qtn}}
+		  
+            {% endfor %}  
+			
+			
+			</div></textarea>
+		</td>
+	</tr>
+	
+	<tr >
+		<td colspan="2">
+			
+		
+			<div style="font-size: 18px;font-family: Times New Roman;color: black">  
+			Replies:
+			<br/>
+			{% for shout in shouts %}
+                  {{shout.comment}}
+		  <br/>
+            {% endfor %}  
+			
+			
+			</div></textarea>
+		</td>
+	</tr>
+	
+	
+   <tr >
+		<td colspan="2">
+			
+		
+			<div></div></textarea>
+		</td>
+	</tr>
+	<tr >
+		<td colspan="2">
+			
+		
+			<textarea rows="12" name="qtn" id="qtn"></textarea>
+		</td>
+	</tr>
+        
+	<tr>
+		<td colspan="2" align="center"><input type="submit" class ="mybutton" onclick="checkvalue(this)"  value="Submit" /></td>
+	</tr>
+	
+	
+</table>   
+</form>
+
+
+</body>
+</html>
